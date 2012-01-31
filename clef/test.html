@@ -1,0 +1,49 @@
+<html>
+<head>
+<!--
+Copyright (C) 2012, Jack Herrington
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<title>Clef Test</title>
+<!--[if IE]><script src="../global/excanvas.js" type="text/javascript" charset="utf-8"></script><![endif]-->
+<script src="../global/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../global/gury.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../global/music.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mclef.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function() {
+	$('#clef').mClef( { notes: [
+		[gMusic.toMidi('E3'), gMusic.toMidi('A4'), gMusic.toMidi('B4')],
+		[gMusic.toMidi('F#3'), gMusic.toMidi('A4'), gMusic.toMidi('C#4')],
+		[gMusic.toMidi('C2'), gMusic.toMidi('E2'), gMusic.toMidi('G2')],
+		[gMusic.toMidi('C3'), gMusic.toMidi('E3'), gMusic.toMidi('G3')],
+		[gMusic.toMidi('C4'), gMusic.toMidi('E4'), gMusic.toMidi('G4')],
+		[gMusic.toMidi('C5'), gMusic.toMidi('E5'), gMusic.toMidi('G5')],
+		[gMusic.toMidi('A6'), gMusic.toMidi('B6'), gMusic.toMidi('C6')],
+		[gMusic.toMidi('C6'), gMusic.toMidi('E6'), gMusic.toMidi('G6')],
+		] } );
+});
+</script>
+</head>
+<body>
+<div id="clef" style="margin:5px;">
+</div>
+</body>
+</html>
