@@ -1,4 +1,4 @@
-This is a set of jQuery plugins for rending UI elements for music applications. This is currently just a keyboard plugin, but I will extend it to a fretboard (for guitar and bass), as well as a simple Clef plugin and a tabulature plugin.
+This is a set of jQuery plugins for rending UI elements for music applications. Thus far there are controls for a piano keyboard, a guitar (or bass) fretboard, a clef and tabulature.
 
 This software is licensed under the MIT Open Source license:
 
