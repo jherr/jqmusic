@@ -20,14 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-function mKeyboard_createClickHandler(note, keyboard) {
-    return function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        keyboard.trigger('click', note);
-    };
-};
-
 (function($) {
     var methods = {
         init: function( options ) {

@@ -256,7 +256,7 @@ var g_clef_imageLoaded = 0;
         } else if ( typeof method === 'object' || ! method ) {
           return methods.init.apply( this, arguments );
         } else {
-          $.error( 'Method ' +  method + ' does not exist on jQuery.mFretboard' );
+          $.error( 'Method ' +  method + ' does not exist on jQuery.mClef' );
         }    
     };
 })(jQuery);
